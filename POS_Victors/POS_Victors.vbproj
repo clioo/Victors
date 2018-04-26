@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7A9BE54-FE8D-4600-8EF4-368EA77AD963}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>POS_Victors.My.MyApplication</StartupObject>
+    <RootNamespace>POS_Victors</RootNamespace>
+    <AssemblyName>POS_Victors</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>POS_Victors.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>POS_Victors.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexion.vb" />
+    <Compile Include="FRM_ABCClientes.Designer.vb">
+      <DependentUpon>FRM_ABCClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ABCClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ABCProveedor.Designer.vb">
+      <DependentUpon>FRM_ABCProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ABCProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ABCEmpleados.Designer.vb">
+      <DependentUpon>FRM_ABCEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ABCEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ABCUsuarios.Designer.vb">
+      <DependentUpon>FRM_ABCUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ABCUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_AgregarProducto.Designer.vb">
+      <DependentUpon>FRM_AgregarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_AgregarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Añadirempleado.Designer.vb">
+      <DependentUpon>FRM_Añadirempleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Añadirempleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Efectivo.Designer.vb">
+      <DependentUpon>FRM_Efectivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Efectivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_EliminarEmpleado.Designer.vb">
+      <DependentUpon>FRM_EliminarEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_EliminarEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_MasterPassword.Designer.vb">
+      <DependentUpon>FRM_MasterPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_MasterPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_menu.Designer.vb">
+      <DependentUpon>frm_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ModificarEmpleado.Designer.vb">
+      <DependentUpon>FRM_ModificarEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ModificarEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_productos.Designer.vb">
+      <DependentUpon>frm_productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reportes.designer.vb">
+      <DependentUpon>frm_reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Ticket.Designer.vb">
+      <DependentUpon>FRM_Ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumerosALetras_modulo.vb" />
+    <Compile Include="Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario.Designer.vb">
+      <DependentUpon>Usuario.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FRM_ABCClientes.resx">
+      <DependentUpon>FRM_ABCClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ABCEmpleados.resx">
+      <DependentUpon>FRM_ABCEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ABCProveedor.resx">
+      <DependentUpon>FRM_ABCProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ABCUsuarios.resx">
+      <DependentUpon>FRM_ABCUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_AgregarProducto.resx">
+      <DependentUpon>FRM_AgregarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Añadirempleado.resx">
+      <DependentUpon>FRM_Añadirempleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Efectivo.resx">
+      <DependentUpon>FRM_Efectivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_EliminarEmpleado.resx">
+      <DependentUpon>FRM_EliminarEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_MasterPassword.resx">
+      <DependentUpon>FRM_MasterPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu.resx">
+      <DependentUpon>frm_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ModificarEmpleado.resx">
+      <DependentUpon>FRM_ModificarEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_productos.resx">
+      <DependentUpon>frm_productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reportes.resx">
+      <DependentUpon>frm_reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Ticket.resx">
+      <DependentUpon>FRM_Ticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.resx">
+      <DependentUpon>Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teclado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teclado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teclado2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apagado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lapiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paloma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cruz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chef Cooking Vector Thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1fa31bbfa14409e7f4ad4c985a21d1a2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60s.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
